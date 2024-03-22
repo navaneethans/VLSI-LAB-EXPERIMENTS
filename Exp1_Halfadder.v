@@ -1,5 +1,6 @@
-module ha(a,b,sum,carry);
+module half_adder(Sum,carry,a,b);
 input a,b;
-output sum,carry;
-
+output Sum,carry;
+assign Sum = a ^ b;
+assign carry = a & b;
 endmodule
